@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+  }
+header{
+    background-color: #fa8fb1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    align-items: center;
+    padding: 30px;
+
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+header ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid hotpink;
+    
+    color: white;
+        
+        background-color: #fa8fb1;
+        background-repeat: no-repeat;
+        border: 1px solid #f74780;
+        
+        
+        &:hover,
+        &:focus {
+          animation: bubbles 1s forwards ease-out;
+          background: bubbles;
+          background-color: #fa8fb1;
+          background-repeat: no-repeat;
+        }
+    }
+      
+      
+      @keyframes bubbles {
+        100% {
+          background-position: move;
+          box-shadow: inset 0 -6.5em 0 #f74780;
+        }
+}
+
+img{
+    width: 200px;
+    height: auto;
+    left: 0;
+    margin-left: 5%;
+  }
+
+  
