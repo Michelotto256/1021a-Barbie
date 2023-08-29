@@ -1,5 +1,6 @@
 import './Footer.css'
 import Link from './../link/Link'
+import imagem from "..//img/barbiefooter.png";
 
 
 export function Footer(){
@@ -7,7 +8,7 @@ export function Footer(){
     <footer>
         <div className='conteudo'>
             <div className='coisas'>
-                <img className='logofooter' src="../src/componentes/barbiefooter.png" alt="" />
+                <img className='logofooter' src={imagem} alt="" />
             </div>
             <ul className="lista">
                 <li>
