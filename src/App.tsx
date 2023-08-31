@@ -1,6 +1,6 @@
 import Header from './componentes/header/Header';
 import Footer from './componentes/footer/Footer';
-import Filme from './componentes/filme/Filme';
+import Main from './componentes/main/Main';
 
 import './App.css'
 
@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
     <Header/>
+    <Main/>
     <Footer/>
-    <Filme/>
     </div>
   );
 }

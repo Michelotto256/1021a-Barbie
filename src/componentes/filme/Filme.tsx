@@ -2,18 +2,20 @@
 import './Filme.css'
 import imagem from "..//img/foto.jpg";
 
-function Filme(){
+type FilmeProps = {
+    titulo:string,
+    sinopse:string,
+    imagem:string
+}
+
+function Filme(props:FilmeProps){
     return(
         
         <div className="filme-content">
             <img src={imagem} alt="" />
-            <img src={imagem} alt="" />
-            <img src={imagem} alt="" />
-            <img src={imagem} alt="" />
-            <img src={imagem} alt="" />
             <div className="text-barbie">
-                <h1>Barbie</h1>
-                <p className="sinopse">lalalallalalalalalalalalalall alallalalalla alallalalalalal lalalalallalalallalalallalal alalallalalalalallalal barbie</p>
+                <h1>{props.titulo}</h1>
+                <p className="sinopse">{props.sinopse}</p>
             </div>
         </div>
     )

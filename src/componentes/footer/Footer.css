@@ -21,7 +21,8 @@ a {
 .conteudo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    padding-left:3.5rem;
+    padding-right:3.5rem;
 }
 
 .coisas h1 {
