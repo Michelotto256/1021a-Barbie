@@ -2,4 +2,30 @@
     display: flex;
     gap: 15px;
     padding: 15px 100px;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+#divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+  }
+  
+  #divBusca img{
+    float:left;
+    width: 20px;
+    height: auto;
+  }

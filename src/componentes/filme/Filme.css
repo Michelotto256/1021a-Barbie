@@ -9,15 +9,26 @@
     background-color: pink;
     box-shadow: 16px 17px 16px -8px rgba(0,0,0,0.1);
 }
-.filme-content>img{
-    width: 100%;
-    height: auto;
-}
+
 .sinopse{
     text-align: justify;
     font-weight: 400;
 }
 .text-barbie{
     color: grey;
-    line-height: 1.4em;
+    line-height: 1.9em;
+}
+
+.foto-filme{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.foto-filme>img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    margin-bottom: 15px;
 }

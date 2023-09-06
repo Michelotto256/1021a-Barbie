@@ -9,8 +9,8 @@
 }
 footer {
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    top: 200%;
     background-color: #fa8fb1;;
 }
 
