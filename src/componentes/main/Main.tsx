@@ -10,7 +10,7 @@ type FilmeTypes={
 
 export default function Main(){
 
-    const [texto, setTexto ] = useState ()
+    const [texto, setTexto ] = useState ("")
 
     const filmes:FilmeTypes[] = [
         {
@@ -22,7 +22,14 @@ export default function Main(){
         id:2,
         titulo:'Barbie',
         sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.', imagem:'/foto2.jfif'
+        },
+        {
+        id:3,
+        titulo:'Batman',
+        sinopse:'Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.',
+        imagem:'/bat.png'
         }
+
     ]
     //let textodigitado = "Barbie"
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
@@ -42,7 +49,24 @@ export default function Main(){
 
         <main className='content-main'>
 
-        <Filme titulo='Barbie' sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo 
+        {/* 
+                    Use algo do vetor para tentar criar os filmes 
+                */}
+                {
+                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map(
+                        (filme)=>
+                            <Filme 
+                                key={filme.id}
+                                sinopse={filme.sinopse}
+                                titulo={filme.titulo}
+                                imagem={filme.imagem}
+                            />
+                    )
+                }
+
+
+
+       {/* <Filme titulo='Barbie' sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo 
         humano em busca da verdadeira felicidade.' imagem='/foto.jpg'/>
 
         <Filme titulo='Barbie' sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo 
@@ -66,6 +90,7 @@ export default function Main(){
         
         
         <Filme titulo='Batman' sinopse='Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.' imagem='/bat.png'/>
+    */}
         </main>
         </>
     )
