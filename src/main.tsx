@@ -6,6 +6,7 @@ import Footer from './componentes/footer/Footer';
 import Main from './componentes/main/Main';
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,8 @@ const router = createBrowserRouter([
     element: <div>Pagina de Contato</div>,
   },
 ]);
+
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />

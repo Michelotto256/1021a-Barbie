@@ -15,13 +15,13 @@ export function Footer(){
                     <h3>Life in the DreamHouse</h3>
                 </li>
                 <li>
-                    <Link texto='Compre sua Barbie'/>
+                    <Link url="#" texto='Compre sua Barbie'/>
                 </li>
                 <li>
-                    <Link texto='Monte sua Barbie'/>
+                    <Link url="#" texto='Monte sua Barbie'/>
                 </li>
                 <li>
-                    <Link texto='Acessórios'/>
+                    <Link url="#" texto='Acessórios'/>
                 </li>
             </ul>
 
@@ -30,13 +30,13 @@ export function Footer(){
                     <h3>Contato</h3>
                 </li>
                 <li>
-                    <Link texto='Cookies'/>
+                    <Link url="#" texto='Cookies'/>
                 </li>
                 <li>
-                    <Link texto='Sobre'/>
+                    <Link url="#" texto='Sobre'/>
                 </li>
                 <li>
-                    <Link texto='Termos e Condições'/>
+                    <Link url="#" texto='Termos e Condições'/>
                 </li>
             </ul>
 
