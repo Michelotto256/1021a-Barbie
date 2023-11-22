@@ -7,7 +7,7 @@ type FilmeProps = {
     imagem:string
 }
 
-function Filme(props:FilmeProps){
+export default function Filme(props:FilmeProps){
     return(
         
         <div className="filme-content">
@@ -23,4 +23,3 @@ function Filme(props:FilmeProps){
         </div>
     )
 }
-export default Filme

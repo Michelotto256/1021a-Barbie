@@ -1,10 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as ReactDOM from 'react-dom/client'
 import  './main.css'
 import Header from './componentes/header/Header';
 import Footer from './componentes/footer/Footer';
 import Main from './componentes/main/Main';
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
+
 
 
 const router = createBrowserRouter([
