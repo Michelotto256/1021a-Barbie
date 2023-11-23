@@ -6,8 +6,8 @@ import axios from 'axios'
 type FilmeTypes={
     id:number,
     titulo:string,
-    sinopse:string,
-    imagem:string
+    descricao:string,
+    foto:string
 }
 
 const URL_API = "http://localhost:3000/filmes";
@@ -59,9 +59,9 @@ export default function Main(){
                         (filme)=>
                             <Filme 
                                 key={filme.id}
-                                sinopse={filme.sinopse}
+                                descricao={filme.descricao}
                                 titulo={filme.titulo}
-                                imagem={filme.imagem}
+                                foto={filme.foto}
                             />
                     )
                 }
